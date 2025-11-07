@@ -37,9 +37,16 @@ void main(void) {
                 if (cont_digitos == 6) {
 
                     unsigned char v1, v2, v3;
+<<<<<<< HEAD
                     v1 = ((((digitos[0])/ 10) % 10) + 48) * 10 + (digitos[1])/ 10) % 10) + 48); 
                     v2 = ((((digitos[2])/ 10) % 10) + 48) * 10 + (digitos[3])/ 10) % 10) + 48); 
                     v3 = ((((digitos[4])/ 10) % 10) + 48) * 10 + (digitos[5])/ 10) % 10) + 48); 
+=======
+                    //COMO PASSAR INT? -48? 
+                    v1 = (digitos[0]) * 10 + (digitos[1]); 
+                    v2 = (digitos[2]) * 10 + (digitos[3]); 
+                    v3 = (digitos[4]) * 10 + (digitos[5]); 
+>>>>>>> 428a495eadc5f33f419bc7f4407535a35ba29a43
                     if (comando_ativo == 'H') {
                         rtcPutHours( v1 ); //hh
                         rtcPutMinutes(v2); // mm
