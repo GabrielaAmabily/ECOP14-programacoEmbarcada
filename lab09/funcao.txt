@@ -1,0 +1,24 @@
+//FUNCAO QUE CRIEI NO "keypad.c"
+
+unsigned char kpRead1 (void) {
+    if(BitTst(valor, 0)) 
+        return 10;
+    if(BitTst(valor, 1)) 
+        return 11;
+    if(BitTst(valor, 2)) 
+        return 3;
+    if(BitTst(valor, 3)) 
+        return 6;
+    if(BitTst(valor, 4)) 
+        return 2;
+    if(BitTst(valor, 5)) 
+        return 5;
+    if(BitTst(valor, 6)) 
+        return 1;
+    if(BitTst(valor, 7)) 
+        return 4;
+    return 0;
+}
+
+
+//LEMBRAR DE DECLARAR NO "keypad.h" TAMBEM 
